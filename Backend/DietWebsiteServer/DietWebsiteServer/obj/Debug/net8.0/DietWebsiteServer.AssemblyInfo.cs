@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DietWebsiteServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0da35ae74352a5f3ecf754b3aa17897f623833c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d06bd268179d28de3a069169beb81b4a5585f1eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("DietWebsiteServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DietWebsiteServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
