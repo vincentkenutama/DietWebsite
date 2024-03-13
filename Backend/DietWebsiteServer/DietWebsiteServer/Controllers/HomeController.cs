@@ -13,6 +13,12 @@ namespace DietWebsiteServer.Controllers
             _logger = logger;
         }
 
+        public string Test()
+        {
+            return "wkwk";
+        }
+
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
