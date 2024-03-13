@@ -1,10 +1,10 @@
 import SignInButton from "./SignInButton";
 import axios from "axios";
 import '../Styles/LoginPage.css'
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { json, useNavigate } from "react-router-dom";
 
-export default function SignInForm()
+export default function SignInForm({status})
 {
 
     const [username, setUsername] = useState('');
@@ -12,6 +12,21 @@ export default function SignInForm()
     const [passwordVisibility, setPasswordVisibility] = useState(false);
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if(!document.cookie) return;
+
+        let cookie = document.cookie.split(/[=;\s]+/)
+
+        const userIndex = cookie.findIndex((element) => element == 'username')
+        const passIndex = cookie.findIndex((element) => element == 'password')
+
+        setUsername((userIndex == -1) ? '' : cookie[userIndex + 1]);
+        setPassword((passIndex == -1) ? '' : cookie[passIndex + 1]);
+        
+        console.log(cookie, cookie.findIndex((element) => element == 'username'))
+        // if(document.cookie) console.log(document.cookie.split('=').)
+    }, [document.cookie])
 
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
@@ -21,16 +36,42 @@ export default function SignInForm()
         setPassword(e.target.value);
     }
 
+    const saveUserInformation = () => {
+        document.cookie = `username=${username}`
+        document.cookie = `password=${password}` 
+    }
+
     const LoginOnClick = async (e) => {
         e.preventDefault();
-        if(username == '' || password == '') return;
+        if(username == '' || password == '') {status('empty'); return;}
         
-        const response = await axios.get(`https://localhost:7115/Login/Index?username=${username}&password=${password}`, {
-            headers: {
-            }
-        })
+        const formData = new FormData();
+        formData.append('username', username);
+        formData.append('password', password);
 
-        console.log(response)
+        const response = await axios.post('https://localhost:7115/Login/Signin', formData);
+        let json_data = response.data;
+        
+        switch(json_data.Status){
+            case 'Wrong Password':
+                status('password');
+                break;
+            case 'Valid':
+                status('ok');
+                saveUserInformation();
+                navigate('/login/redirect');
+                break;
+            case 'Not Found':
+                status('both');
+                break;
+            case 'Wrong Username':
+                status('username');
+                break;
+            default :
+                status('ok')
+                break;
+        }
+        // console.log(json_data.status)
     }
 
     const handleShowPassword = (e) => {
@@ -38,14 +79,25 @@ export default function SignInForm()
         setPasswordVisibility(!passwordVisibility)
     }
 
+
     return(
         <div className="sign-in-container">
             <span className="sign-in">Sign In</span>
             <span className="sign-text">Masuk untuk mengakses data</span>
             <form action="">
-                <input type="text" className="input-text" placeholder="Username" onChange={handleUsernameChange}/>
+                <input  type="text" 
+                        className="input-text" 
+                        placeholder="Username" 
+                        onChange={handleUsernameChange}
+                        value={username}
+                        />
                 <div className="password-container">
-                    <input type={passwordVisibility ? 'text' : 'password'} className="input-text input-password" placeholder="Password" onChange={handlePasswordChange}/>
+                    <input  type={passwordVisibility ? 'text' : 'password'} 
+                            className="input-text input-password" 
+                            placeholder="Password" 
+                            onChange={handlePasswordChange}
+                            value={password}
+                            />
                     <p className = 'show-password'onClick={handleShowPassword} onMouseOver={(e) => e.target.style.cursor = 'pointer'}>Show</p>
                 </div>
                 {/* <span>SHOW PASSWORD</span> */}
