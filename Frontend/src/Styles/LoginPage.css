@@ -1,0 +1,107 @@
+/* Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.sign-in-container{
+    padding: 30px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 375px;
+    height: fit-content;
+    margin-left: -187.5px;
+    margin-top: -200px;
+    /* background-color: wheat; */
+    border: 0.15em solid #0288d1;
+    border-radius: 1em;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.sign-in{
+    display: block;
+    font-weight: 600;
+    font-size: 32px;
+
+}
+
+.sign-text{
+    margin: 30px 0;
+}
+
+form{
+    /* height: inherit; */
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: auto; */
+    /* margin-bottom: ; */
+}
+
+.password-container{
+    display: flex;
+    width: 100%;
+    /* alig */
+    text-align: center;
+    align-items: baseline;
+}
+
+.input-password{
+    display: flex;
+    margin-right: 0.5em;
+}
+
+.input-text{
+    margin-bottom: 40px;
+    /* display: block; */
+    height: 50px;
+    margin-bottom: 30px 0;
+    border-radius: 0.35em;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 16px;
+    /* padding-left: 5px; */
+    /* margin: 0 10%; */
+}
+
+button{
+    /* margin-bottom: 0; */
+    background-color: #026ea9;
+    border-radius: 1em;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    border: 0px;
+    transition-duration: 100ms;
+}
+
+input:active{
+    border: 1.5px solid black;
+    transition-duration: 500ms;
+}
+
+input:hover{
+    border: 1.5px solid black;
+    /* transition-duration: 500ms; */
+}
+
+button:hover{
+    opacity: 0.8;
+    transition-duration: 150ms;
+}
+
+a{
+    text-decoration: none;
+    color: #026ea9;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+a:hover{
+    transition-duration: 200ms;
+    opacity: 1;
+}
