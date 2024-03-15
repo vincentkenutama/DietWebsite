@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import {useNavigate} from 'react-router-dom'
 import LoginPage from "./LoginPage";
+import ProfilePicture from "../Component/ProfilePicture";
 
 export default function LandingPage() {
 
@@ -8,13 +9,13 @@ export default function LandingPage() {
 
     useEffect(() => {
         const cookie = document.cookie
-        // if(!cookie) navigate('/login')
-        navigate('/login')
+        // navigate('/')
 
     })
 
     return(
         <div>
+            <ProfilePicture/>
             <p>Landing Page</p>
         </div>
     );
