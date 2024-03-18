@@ -1,6 +1,6 @@
 import '../Styles/LoginPage.css'
 
-export default function SignInNotify({status = 'ok'}) {
+export default function SignInNotify({status = 'ok', msg = ''}) {
 
     const state = {
         ok: 'hidden',
@@ -19,6 +19,6 @@ export default function SignInNotify({status = 'ok'}) {
 
 
     return (
-        <p className={state[status]}>{message[status]}</p>
+        <p className={(status in state) ? state[status] : state.both}>{(status in message) ? message[status] : status} {msg}</p>
     );
 }

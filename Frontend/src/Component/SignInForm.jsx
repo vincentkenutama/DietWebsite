@@ -101,7 +101,8 @@ export default function SignInForm({status})
                     <p className = 'show-password'onClick={handleShowPassword} onMouseOver={(e) => e.target.style.cursor = 'pointer'}>Show</p>
                 </div>
                 {/* <span>SHOW PASSWORD</span> */}
-                <button onClick={LoginOnClick}>Sign In</button>
+                <button onClick={LoginOnClick}
+                        onMouseOver={(e) => e.target.style.cursor = 'pointer'}>Sign In</button>
             </form>
             <span>Belum Bergabung? <a onMouseOver={(e) => e.target.style.cursor = 'pointer' } onClick={() => {navigate('/signup')}}>Daftar Sekarang</a></span>
         </div>

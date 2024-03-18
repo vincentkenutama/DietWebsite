@@ -40,5 +40,14 @@ namespace DietWebsiteServer.Models
             Age = age;
             Gender = gender;
         }
+
+        public Users(string? username, string? password, string? nama, int age, string? gender)
+        {
+            Username = username;
+            Password = password;
+            Nama = nama;
+            Age = age;
+            Gender = gender;
+        }
     }
 }

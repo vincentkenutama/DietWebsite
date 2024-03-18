@@ -10,7 +10,7 @@ export default function ProfilePicture({image, size, toUser})
 
     return(
         <>
-            <img    src={(image == '' || image == null) ? "https://cdn-icons-png.flaticon.com/128/456/456212.png" : image} 
+            <img    src={(image) ? image : "https://cdn-icons-png.flaticon.com/128/456/456212.png"} 
                     alt="" 
                     className={`${picture_size[size]}`}
                     onClick={toUser}/>

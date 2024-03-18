@@ -16,18 +16,22 @@ export default function ProfileDisplay({username})
         getUserInformation()
     })
 
-    const getUserInformation = async () => {
-        const response = await axios.get(`https://localhost:7115/User/GetUser?username=${username}`)
-        const data = response.data;
-        
-        setUserDisplay(data.Nama)
-        setUserImage(data.Picture)
-    }
-
     const navigateToUserPage = () => {
         navigate('/user')    
     }
 
+    const getUserInformation = async () => {
+        await axios.get(`https://localhost:7115/User/GetUser?username=${username}`)
+        .then((response) => {
+            const data = response.data;
+            
+            setUserDisplay(data.Nama)
+            setUserImage(data.Picture)
+        }
+        ).catch(() => {
+
+        })    
+    }
 
     return(
         <div    className="profile-container"
