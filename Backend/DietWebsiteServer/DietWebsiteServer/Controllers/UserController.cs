@@ -22,5 +22,12 @@ namespace DietWebsiteServer.Controllers
         {
             return await UserHandler.GetUserInformation(username);
         }
+
+        [HttpPost]
+        public async Task<string> Signup(string username, string password, string nama, string age, string gender)
+        {
+            await Console.Out.WriteLineAsync($"test {username} - {nama}");
+            return await UserHandler.SignUp(username, password, nama, age, gender);
+        }
     }
 }

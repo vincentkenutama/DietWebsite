@@ -8,7 +8,7 @@ export default function DisplayName({name, toUser}){
         <div    className="profile-displayname" 
                 onMouseOver={(e) => e.target.style.cursor = 'pointer'}
                 onClick={toUser}>
-            {name}
+            {(name) ? name : "DisplayName"}
         </div>
     );
 }

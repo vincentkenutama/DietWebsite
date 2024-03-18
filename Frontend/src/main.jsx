@@ -6,11 +6,12 @@ import {
 } from "react-router-dom";
 
 import LandingPage from "./Pages/LandingPage";
-import LoginPage from "./Pages/LoginPage";
 import SignUpPage from "./Pages/SignUpPage";
+import LoginPage from "./Pages/LoginPage";
 import LoginRedirect from "./Pages/LoginRedirect";
 import Dashboard from "./Pages/Dashboard";
 import UserPage from "./Pages/UserPage";
+import SignUpRedirect from "./Pages/Redirect/SignUpRedirect";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: '/user',
     element: <UserPage/>
+  },
+  {
+    path: '/redirect/signup',
+    element: <SignUpRedirect/>
   }
 ]);
 

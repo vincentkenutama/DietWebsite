@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\database\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\database\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\generaljson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\generaljson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\helper\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\helper\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,28 +27,36 @@
       "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\database\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\database\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\database\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\generaljson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\generaljson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\database\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\database\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\helper\\statuscodejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\helper\\statuscodejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\helper\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\helper\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\interface\\ijson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\interface\\ijson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|solutionrelative:dietwebsiteserver\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86DB9898-424A-4C78-A6EE-824BE71AE292}|DietWebsiteServer\\DietWebsiteServer.csproj|d:\\dietwebsite\\backend\\dietwebsiteserver\\dietwebsiteserver\\dietwebsiteserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,50 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserDb.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\UserDb.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\UserDb.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\UserDb.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Models\\UserDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:36:24.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GeneralJson.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\GeneralJson.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\GeneralJson.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\GeneralJson.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Models\\GeneralJson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:59:38.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\UserController.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:42:38.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "JsonSerialize.cs",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Helper\\JsonSerialize.cs",
               "RelativeDocumentMoniker": "DietWebsiteServer\\Helper\\JsonSerialize.cs",
@@ -130,59 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IJson.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Interface\\IJson.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Interface\\IJson.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Interface\\IJson.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Interface\\IJson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T18:44:18.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "LoginHandler.cs",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\LoginHandler.cs",
               "RelativeDocumentMoniker": "DietWebsiteServer\\Database\\LoginHandler.cs",
               "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\LoginHandler.cs",
               "RelativeToolTip": "DietWebsiteServer\\Database\\LoginHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA0AAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwBgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T09:36:51.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\Users.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\Users.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Models\\Users.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T09:30:06.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DatabaseHandler.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\DatabaseHandler.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Database\\DatabaseHandler.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\DatabaseHandler.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Database\\DatabaseHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T09:12:34.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Program.cs",
               "RelativeDocumentMoniker": "DietWebsiteServer\\Program.cs",
@@ -190,12 +112,11 @@
               "RelativeToolTip": "DietWebsiteServer\\Program.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T04:55:11.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T04:55:11.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\ErrorViewModel.cs",
@@ -203,38 +124,24 @@
               "RelativeToolTip": "DietWebsiteServer\\Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T09:10:30.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T09:10:30.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "UserHandler.cs",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\UserHandler.cs",
               "RelativeDocumentMoniker": "DietWebsiteServer\\Database\\UserHandler.cs",
               "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\UserHandler.cs",
               "RelativeToolTip": "DietWebsiteServer\\Database\\UserHandler.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAowFUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T07:43:35.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StatusCodeJson.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Helper\\StatusCodeJson.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Helper\\StatusCodeJson.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Helper\\StatusCodeJson.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Helper\\StatusCodeJson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T08:07:45.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "LoginController.cs",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "DietWebsiteServer\\Controllers\\LoginController.cs",
@@ -247,6 +154,108 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\UserController.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T07:42:38.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T04:13:25.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseHandler.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\DatabaseHandler.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Database\\DatabaseHandler.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Database\\DatabaseHandler.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Database\\DatabaseHandler.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:12:34.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\Users.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\Users.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Models\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:30:06.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GeneralJson.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\GeneralJson.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\GeneralJson.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\GeneralJson.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Models\\GeneralJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T07:59:38.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDb.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\UserDb.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Models\\UserDb.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Models\\UserDb.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Models\\UserDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:36:24.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IJson.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Interface\\IJson.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Interface\\IJson.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Interface\\IJson.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Interface\\IJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T18:44:18.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StatusCodeJson.cs",
+              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Helper\\StatusCodeJson.cs",
+              "RelativeDocumentMoniker": "DietWebsiteServer\\Helper\\StatusCodeJson.cs",
+              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Helper\\StatusCodeJson.cs",
+              "RelativeToolTip": "DietWebsiteServer\\Helper\\StatusCodeJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:07:45.733Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Properties\\launchSettings.json",
@@ -255,21 +264,7 @@
               "RelativeToolTip": "DietWebsiteServer\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-13T04:26:09.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "DietWebsiteServer\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "DietWebsiteServer\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA8AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T04:13:25.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T04:26:09.272Z"
             },
             {
               "$type": "Document",
@@ -281,8 +276,7 @@
               "RelativeToolTip": "DietWebsiteServer\\DietWebsiteServer.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-13T18:42:53.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T18:42:53.066Z"
             }
           ]
         }
