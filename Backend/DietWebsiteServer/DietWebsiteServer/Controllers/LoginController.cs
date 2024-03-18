@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using DietWebsiteServer.API;
 using DietWebsiteServer.Database;
 using System.Data.Entity.Core.Objects;
 using DietWebsiteServer.Models;
