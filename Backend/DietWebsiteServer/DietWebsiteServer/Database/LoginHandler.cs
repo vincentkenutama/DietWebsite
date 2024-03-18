@@ -2,7 +2,6 @@
 using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-using DietWebsiteServer.API;
 using DietWebsiteServer.Helper;
 using DietWebsiteServer.Models;
 using DietWebsiteServer.Interface;
@@ -14,8 +13,7 @@ namespace DietWebsiteServer.Database
         
         public static async Task<string> Auth(string username, string password)
         {
-            while (DatabaseHandler.conn.State == System.Data.ConnectionState.Open) ;
-
+            DatabaseHandler handler = new DatabaseHandler();
             JsonSerialize json = new JsonSerialize();
             Users user = new Users();
 
@@ -23,7 +21,7 @@ namespace DietWebsiteServer.Database
 
             try
             {
-                MySqlConnection con =  await DatabaseHandler.ConnectToDatabase();
+                MySqlConnection con =  await handler.ConnectToDatabase();
                 MySqlCommand command = new MySqlCommand(query_string, con);
                 MySqlDataReader reader = command.ExecuteReader();
 

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using DietWebsiteServer.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -13,7 +16,6 @@ builder.Services.AddCors(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 var app = builder.Build();
 
 
@@ -35,6 +37,8 @@ app.UseRouting();
 app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
+
+app.MapGet("/i", () => "test");
 
 app.MapControllerRoute(
     name: "default",

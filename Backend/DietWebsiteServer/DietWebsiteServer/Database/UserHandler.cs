@@ -1,5 +1,4 @@
-﻿using DietWebsiteServer.API;
-using DietWebsiteServer.Helper;
+﻿using DietWebsiteServer.Helper;
 using DietWebsiteServer.Models;
 using Microsoft.Identity.Client;
 using MySql.Data.MySqlClient;
@@ -13,7 +12,7 @@ namespace DietWebsiteServer.Database
 
         public static async Task<string> GetProfilePicture(string username)
         {
-            while (DatabaseHandler.conn.State == System.Data.ConnectionState.Open) ;
+            DatabaseHandler handler = new DatabaseHandler();
 
             StatusCodeJson jsonstatus = new StatusCodeJson();
             Users user = new Users();
@@ -21,7 +20,7 @@ namespace DietWebsiteServer.Database
 
             try
             {
-                MySqlConnection conn = await DatabaseHandler.ConnectToDatabase();
+                MySqlConnection conn = await handler.ConnectToDatabase();
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader reader = (MySqlDataReader) await cmd.ExecuteReaderAsync();
 
@@ -31,7 +30,7 @@ namespace DietWebsiteServer.Database
 
                 }
 
-                await DatabaseHandler.CloseConnection();
+                await handler.CloseConnection();
 
                 if(user.Picture != "") return JsonSerializer.Serialize(user);
 
@@ -47,7 +46,7 @@ namespace DietWebsiteServer.Database
 
         public static async Task<string> GetUserInformation(string username)
         {
-            while (DatabaseHandler.conn.State == System.Data.ConnectionState.Open);
+            DatabaseHandler handler = new DatabaseHandler();
 
             StatusCodeJson jsonstatus = new StatusCodeJson();
             Users user = new Users();
@@ -57,7 +56,7 @@ namespace DietWebsiteServer.Database
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand(query, await DatabaseHandler.ConnectToDatabase());
+                MySqlCommand cmd = new MySqlCommand(query, await handler.ConnectToDatabase());
                 MySqlDataReader reader = (MySqlDataReader) await cmd.ExecuteReaderAsync();
 
 
@@ -72,7 +71,7 @@ namespace DietWebsiteServer.Database
                 }
 
                 await Console.Out.WriteLineAsync("reading success... closing...");
-                await DatabaseHandler.CloseConnection();
+                await handler.CloseConnection();
 
                 return JsonSerializer.Serialize(user);
 
@@ -83,7 +82,7 @@ namespace DietWebsiteServer.Database
                 jsonstatus.CodeNotFound();
                 
             }
-            await DatabaseHandler.CloseConnection();
+            await handler.CloseConnection();
 
             return JsonSerializer.Serialize(jsonstatus);
         }

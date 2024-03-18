@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3EkeOiATpENPAned1jxHZv2inCJ5IzWKpFjfT4PUHXNbskhjj7GYqf9q3fu0El4onFee0B0A0jjSeK6gwr/54w==",
+  "dgSpecHash": "XK2mcFt+EdvxpyoQiR1J7j+mk7hRxva5/yj2sd4w49rYolahPxe1IO/esKG8b7vUfRJIvoUsXxFwXJusF8J0uQ==",
   "success": true,
   "projectFilePath": "D:\\DietWebsite\\Backend\\DietWebsiteServer\\DietWebsiteServer\\DietWebsiteServer.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\vince\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.3\\microsoft.entityframeworkcore.inmemory.8.0.3.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

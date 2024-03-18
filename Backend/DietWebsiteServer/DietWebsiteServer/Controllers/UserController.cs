@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DietWebsiteServer.Database;
 using System.Data.Entity;
-using DietWebsiteServer.API;
 
 namespace DietWebsiteServer.Controllers
 {

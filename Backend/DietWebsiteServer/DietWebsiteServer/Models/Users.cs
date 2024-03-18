@@ -1,4 +1,5 @@
 ﻿using DietWebsiteServer.Interface;
+using System.Data.Entity;
 
 namespace DietWebsiteServer.Models
 {
