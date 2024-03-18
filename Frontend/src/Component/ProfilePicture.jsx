@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import "../Styles/UsersStyles.css"
 
-export default function ProfilePicture({username, size})
+export default function ProfilePicture({username, size, toUser})
 {
 
     const [picture, setPicture] = useState('')
@@ -22,14 +22,14 @@ export default function ProfilePicture({username, size})
         if(data.Picture != null) setPicture(data.Picture);  
     }
 
-    // console.log(picture)
 
     return(
         <>
             {/* {console.log(`picture ${picture}`)} */}
             <img    src={(picture == '' || picture == null) ? "https://cdn-icons-png.flaticon.com/128/456/456212.png" : picture} 
                     alt="" 
-                    className={`${picture_size[size]}`}/>
+                    className={`${picture_size[size]}`}
+                    onClick={toUser}/>
         </>
     )
 }
