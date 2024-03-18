@@ -14,33 +14,35 @@ namespace DietWebsiteServer.API
         private static string password = "admin";
         private static string database = "dietwebsitedatabase";
         private static string conn_str = "server=127.0.0.1;user=root;database=dietwebsitedatabase;port=3306;password=admin";
-        static MySqlConnection conn = new MySqlConnection(conn_str);
+        public static MySqlConnection conn = new MySqlConnection(conn_str);
 
         public DatabaseHandler()
         {
 
         }
 
-        public static MySqlConnection ConnectToDatabase()
+        public static async Task<MySqlConnection> ConnectToDatabase()
         {
+
             try
             {
                 Console.WriteLine("Connecting to database...");
-                conn.Open();
+                await conn.OpenAsync();
                 Console.WriteLine("Connection successful...");
                 return conn;
             }
             catch (Exception ex)
-            {
+            { 
                 Console.WriteLine("Connection failed..." + ex.Message);
                 return conn;
             }
 
         }
 
-        public static void CloseConnection()
+        public static async Task CloseConnection()
         {
-            conn.Close();
+            while (DatabaseHandler.conn.State == System.Data.ConnectionState.Open) await conn.CloseAsync();
+
         }
     }
 }

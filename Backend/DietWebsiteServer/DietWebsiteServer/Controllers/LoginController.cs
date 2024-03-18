@@ -21,10 +21,10 @@ namespace DietWebsiteServer.Controllers
         }
 
         [HttpPost]
-        public string Signin(string username, string password)
+        public async Task<string> Signin(string username, string password)
         {
             Console.WriteLine($"user : {username} pass : {password}");
-            return LoginHandler.Auth(username, password);
+            return await LoginHandler.Auth(username, password);
         }
 
     }

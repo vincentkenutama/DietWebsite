@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DietWebsiteServer.Database;
+using System.Data.Entity;
+using DietWebsiteServer.API;
 
 namespace DietWebsiteServer.Controllers
 {
@@ -14,6 +16,12 @@ namespace DietWebsiteServer.Controllers
         public async Task<string> Picture(string username)
         {
             return await UserHandler.GetProfilePicture(username);
+        }
+
+        [HttpGet]
+        public async Task<string> GetUser(string username)
+        {
+            return await UserHandler.GetUserInformation(username);
         }
     }
 }

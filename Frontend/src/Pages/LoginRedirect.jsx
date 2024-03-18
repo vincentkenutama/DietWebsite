@@ -1,10 +1,10 @@
 import ProfilePicture from "../Component/ProfilePicture";
+import DisplayName from "../Component/DisplayName";
 
 export default function LoginRedirect() {
 
     return(
-        <>
-            <ProfilePicture username="vincentkenutama" size="small"/>
+        <>  
             <p>tes</p>
         </>
     );

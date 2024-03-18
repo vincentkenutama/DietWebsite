@@ -12,8 +12,10 @@ namespace DietWebsiteServer.Database
     public class LoginHandler 
     {
         
-        public static string Auth(string username, string password)
+        public static async Task<string> Auth(string username, string password)
         {
+            while (DatabaseHandler.conn.State == System.Data.ConnectionState.Open) ;
+
             JsonSerialize json = new JsonSerialize();
             Users user = new Users();
 
@@ -21,7 +23,7 @@ namespace DietWebsiteServer.Database
 
             try
             {
-                MySqlConnection con = DatabaseHandler.ConnectToDatabase();
+                MySqlConnection con =  await DatabaseHandler.ConnectToDatabase();
                 MySqlCommand command = new MySqlCommand(query_string, con);
                 MySqlDataReader reader = command.ExecuteReader();
 
@@ -39,7 +41,7 @@ namespace DietWebsiteServer.Database
                 if (user.Password != password && user.Username != null) json.Serialize("Wrong Password", user); 
                 if (user.Password == password)  json.Serialize("Valid", user); 
 
-                con.Close();
+                await con.CloseAsync();
 
                 //Console.WriteLine(json.GetSerializaton());
 

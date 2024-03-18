@@ -9,7 +9,7 @@ export default function LandingPage() {
 
     useEffect(() => {
         const cookie = document.cookie
-        // navigate('/')
+        navigate('/dashboard')
 
     })
 

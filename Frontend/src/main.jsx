@@ -9,6 +9,8 @@ import LandingPage from "./Pages/LandingPage";
 import LoginPage from "./Pages/LoginPage";
 import SignUpPage from "./Pages/SignUpPage";
 import LoginRedirect from "./Pages/LoginRedirect";
+import Dashboard from "./Pages/Dashboard";
+import UserPage from "./Pages/UserPage";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: '/login/redirect',
     element: <LoginRedirect/>
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard/>
+  },
+  {
+    path: '/user',
+    element: <UserPage/>
   }
 ]);
 
