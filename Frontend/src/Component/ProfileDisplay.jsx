@@ -17,7 +17,7 @@ export default function ProfileDisplay({username})
     })
 
     const navigateToUserPage = () => {
-        navigate('/user')    
+        navigate('/dashboard')    
     }
 
     const getUserInformation = async () => {

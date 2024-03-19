@@ -37,6 +37,8 @@ export default function SignInForm({status})
     }
 
     const saveUserInformation = () => {
+        document.cookie = `username=;`
+        document.cookie = `password=;`
         document.cookie = `username=${username}`
         document.cookie = `password=${password}` 
     }
@@ -59,7 +61,7 @@ export default function SignInForm({status})
             case 'Valid':
                 status('ok');
                 saveUserInformation();
-                navigate('/login/redirect');
+                navigate('/dashboard');
                 break;
             case 'Not Found':
                 status('both');
