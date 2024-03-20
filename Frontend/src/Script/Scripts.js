@@ -1,4 +1,23 @@
 import { dayKeyValue, monthKeyValue } from "./Variables";
+import axios from "axios";
+
+
+
+
+async function getUserInformation()
+{
+    const response = await axios.get(`https://localhost:7115/User/GetUser?username=vincentkenutama`)
+    // console.log(response);
+    return response;
+    
+}
+
+export async function getUserFullName(params)
+{
+    const data = await getUserInformation();
+    // console.log(data.data.Nama)
+    return await data.data.Nama;
+}
 
 function getCookiesValues(key)
 {
@@ -32,4 +51,4 @@ function getTodayMonth(){
     return monthKeyValue[new Date().getMonth()];
 }
 
-export {getCookiesValues, getActiveUser, getTodayDay, getTodayMonth, stepOverDay};
+export {getCookiesValues, getActiveUser, getTodayDay, getTodayMonth, stepOverDay, getUserInformation};
