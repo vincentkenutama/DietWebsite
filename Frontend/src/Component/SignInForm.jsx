@@ -24,7 +24,7 @@ export default function SignInForm({status})
         setUsername((userIndex == -1) ? '' : cookie[userIndex + 1]);
         setPassword((passIndex == -1) ? '' : cookie[passIndex + 1]);
         
-        console.log(cookie, cookie.findIndex((element) => element == 'username'))
+        // console.log(cookie, cookie.findIndex((element) => element == 'username'))
         // if(document.cookie) console.log(document.cookie.split('=').)
     }, [document.cookie])
 
@@ -51,7 +51,9 @@ export default function SignInForm({status})
         formData.append('username', username);
         formData.append('password', password);
 
-        const response = await axios.post('https://localhost:7115/Login/Signin', formData);
+        const response = await axios.post('https://localhost:7115/Login/Signin', formData)
+                                    .catch(status('Connection Error'));
+        
         let json_data = response.data;
         
         switch(json_data.Status){

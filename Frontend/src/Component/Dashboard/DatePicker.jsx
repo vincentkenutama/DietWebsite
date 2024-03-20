@@ -20,6 +20,10 @@ export default function DatePicker(){
         setIndex(index - 1);
     }
 
+    const navigateToThisDay = () => {
+        setIndex(0)
+    }
+
     const navigateToDay = (offset) => {
         setIndex(index + offset);
     }
@@ -27,8 +31,10 @@ export default function DatePicker(){
     return(
         <div>
             <div className="datepicker-container">
-                <DateMonthYear offset={index}/>
-                <DatePickerNavigation nav_back={navigateBackDay} nav_next={navigateNextDay}/>
+                <div className='datepicker-navigator'>
+                    <DateMonthYear offset={index} navigate={navigateToThisDay}/>
+                    <DatePickerNavigation nav_back={navigateBackDay} nav_next={navigateNextDay}/>
+                </div>
                 <DateList index={index} setNavigate={navigateToDay}/>
             </div>
            

@@ -3,7 +3,7 @@ import { getTodayDay, getTodayMonth, stepOverDay} from "../../Script/Scripts";
 import { monthKeyValue } from "../../Script/Variables";
 import { useSearchParams } from "react-router-dom";
 
-export default function DateMonthYear({offset = 0})
+export default function DateMonthYear({offset = 0, navigate})
 {
     const [month, setMonth] = useState('');
     const [year, setYear] = useState('');
@@ -23,6 +23,6 @@ export default function DateMonthYear({offset = 0})
 
 
     return(
-        <span className='datepicker-header'>{month} {year}</span>
+        <div className='datepicker-header'onMouseOver={(e) => e.target.style.cursor = 'pointer'} onClick={navigate}>{month} {year}</div>
     );
 }

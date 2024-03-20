@@ -1,6 +1,63 @@
-.dashboard-container{
-    display: inline-block;
+
+.dashboard{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-content{
+    flex:2;
+    padding: 0 10px;
+    border-radius: 1em;
+    background-color: #ecebeb;
+}
+
+.dashboard-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    justify-content: end;
     background-color: wheat;
+    width: 100%;
+}
+
+.dashboard-greeting{
+    display: flex;
+    flex-direction: column;
+}
+
+.greet-user{
+    font-size: 26px;
+}
+
+.greet-dummy-text{
+    font-size: 18px;
+    color: #90938C;
+}
+
+.dashboard-greeting{
+    margin: 62px 0;
+}
+
+.dashboard-sidebar{
+    padding: 0 1.5em;
+    /* flex: 0; */
+    /* display: flex; */
+    justify-self: end;
+    flex-direction: row;
+    width: 18em;
+    justify-content: end;
+}
+
+
+.dashboard-container{
+    margin: 0 10px;
+    /* padding-left: 20px; */
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -9,17 +66,31 @@
 }
 
 .datepicker-container{
-    display: block;
+    /* padding-top: 100px; */
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: fit-content;
+    justify-content: end;
     flex-direction: row;
-    margin: 10px;
+    /* margin: 10px; */
+    /* margin-top: 50px; */
     /* justify-content: center; */
 }
 
+.datepicker-navigator{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    flex: 0 0 100%;
+}
 .datepicker-header{
-    display: inline-block;
-    margin-right: 3em;
+    display: inline-flex;
+    /* display: inline-block; */
+    /* margin-right: 3em; */
     /* padding: 0.5em; */
     font-size: 26px;
     font-weight: 600;
@@ -27,12 +98,14 @@
 
 
 .datepicker-nav{
-    display: inline-block;
-    margin: 0;
+    display:inline-flex;
+    flex: 1;
+    justify-content: flex-end;
+    /* display: inline-block; */
 }
 
 .datepicker-nav > img{
-    display: inline-block;
+    /* display: inline-block; */
     stroke-width: 30px;
     padding-left: 1em;
     width: 1.4em;
@@ -54,6 +127,7 @@
 }
 
 .datepicker-list-date{
+    flex: 4;
     margin: 0.35em 0;
     font-size: 20px;
     font-weight: 500;
@@ -86,6 +160,7 @@
 
 .datepicker-center{
     /* padding: 5px; */
+    transition: 200ms;
     padding: 0.15em 0.3em;
     border-radius: 0.5em;
     color: white;
