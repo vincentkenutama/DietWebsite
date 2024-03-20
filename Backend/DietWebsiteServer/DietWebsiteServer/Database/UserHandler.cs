@@ -178,6 +178,35 @@ namespace DietWebsiteServer.Database
 
             return JsonSerializer.Serialize(jsonstatus);
         }
+
+        
+        public static async Task<string> UpdateUser(Users oldUser,Users updatedUser)
+        {
+            DatabaseHandler db = new DatabaseHandler();
+            StatusCodeJson status = new StatusCodeJson();
+            MySqlCommand cmd;
+            string? query;
+
+            await Console.Out.WriteLineAsync($"username : {oldUser.Username} pass : {updatedUser.Username}");
+            try
+            {
+                query = $"""
+                            UPDATE PENGGUNA 
+                            SET PASSWORD = "{updatedUser.Username}"
+                            WHERE USERNAME = "{oldUser.Username}"
+                    """;
+
+                cmd = new MySqlCommand(query,await db.ConnectToDatabase());
+                await cmd.ExecuteNonQueryAsync();
+
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                await Console.Out.WriteLineAsync(ex.ToString());
+                return ex.ToString();
+            }
+        }
     }
 }
 

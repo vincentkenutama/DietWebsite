@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DietWebsiteServer.Database;
 using System.Data.Entity;
+using DietWebsiteServer.Models;
+using System.Text.Json;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.AspNetCore.Routing.Template;
 
 namespace DietWebsiteServer.Controllers
 {
@@ -29,5 +33,21 @@ namespace DietWebsiteServer.Controllers
             await Console.Out.WriteLineAsync($"test {username} - {nama}");
             return await UserHandler.SignUp(username, password, nama, age, gender);
         }
+
+        //public void Coba(<T> )
+        //{
+
+        //}
+
+        [HttpPost]
+        public async Task<string> Update(string oldUsername, string newUsername)
+        {
+            Users oldUser = JsonSerializer.Deserialize<Users>(oldUsername);
+            //Users updatedUser = new Users(username: newUsername);
+            await Console.Out.WriteLineAsync($"oldusername {oldUser.Username}");
+            //return await UserHandler.UpdateUser(oldUser, updatedUser);
+            return "";
+        }
     }
 }
+    

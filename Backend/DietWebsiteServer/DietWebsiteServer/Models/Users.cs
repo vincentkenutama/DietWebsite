@@ -20,16 +20,21 @@ namespace DietWebsiteServer.Models
 
         }
 
+        public Users(string username)
+        {
+            this.Username = username;
+        }
+
         public Users(string? username, string? password)
         {
             this.Username = username;
             this.Password = password;
         }
 
-        public Users(string? password)
-        {
-            this.Password = password;
-        }
+        //public Users(string? password)
+        //{
+        //    this.Password = password;
+        //}
 
         public Users(int id, string? username, string? password, string? nama, int age, string? gender)
         {
