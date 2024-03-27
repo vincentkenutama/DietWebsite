@@ -1,0 +1,17 @@
+.user-update-name-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: teal; */
+    color: black;
+}
+
+.user-update-name-image img{
+    margin: 1em;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    border: 0.05em solid black;
+}
+

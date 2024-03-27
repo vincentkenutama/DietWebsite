@@ -19,16 +19,16 @@ export default function UserGreeting()
         const hour = new Date().getHours()
 
         switch(true){
-            case hour > 19:
+            case hour >= 19:
                 setGreetingSelector('malam')
                 break;
-            case hour > 15:
+            case hour >= 15:
                 setGreetingSelector('sore')
                 break;
-            case hour > 11:
+            case hour >= 11:
                 setGreetingSelector('siang')
                 break;
-            case hour > 0:
+            case hour >= 0:
                 setGreetingSelector('pagi')
                 break;
             default:
@@ -54,4 +54,6 @@ export default function UserGreeting()
            <span className="greet-dummy-text">Mari memulai hidup sehat</span>
         </div>
     )
+
+// export default function 
 }
