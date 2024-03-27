@@ -12,7 +12,7 @@ import LoginRedirect from "./Pages/LoginRedirect";
 import Dashboard from "./Pages/Dashboard";
 import UserPage from "./Pages/UserPage";
 import SignUpRedirect from "./Pages/Redirect/SignUpRedirect";
-import ProfilePage from "./Pages/ProfilePage";
+import ProfilePageUpdater from "./Pages/ProfilePageUpdater";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/user/update',
-    element: <ProfilePage/>
+    element: <ProfilePageUpdater/>
   }
 ]);
 

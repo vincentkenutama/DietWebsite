@@ -1,0 +1,81 @@
+.user-profile-update-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    border-radius: 2em;
+    padding: 10px;
+    background-color: antiquewhite;
+    /* margin-bottom: ; */
+}
+
+.user-profile-update-container form{
+    display: flex;
+    gap: 0.75em;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+
+
+
+.user-profile-update-container label{
+    display: flex;
+    /* flex-grow: 1; */
+    font-size: 20px;
+    font-weight: 500;
+    /* color: antiquewhite; */
+    /* font-size: 20px; */
+}
+
+
+.user-profile-update-container select{
+    /* flex: 0.5; */
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 2em;
+    /* color: antiquewhite; */
+    /* font-size: 20px; */
+}
+
+.user-profile-update-container input{
+    /* display: flex; */
+    flex: 0.5;
+    font-size: 20px;
+    /* flex: ; */
+    padding:  0.5em 0.2em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    /* background-color: white; */
+    width: 98%;
+    /* flex-grow: 1; */
+}
+.form-wrapper{
+    margin: 0.5em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 2em; */
+    /* text-align: start; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-update-btn-wrapper{
+    display: flex;
+    flex: 0.5;
+    gap: 1em;
+}
+
+.user-profile-save-btn{
+    border-radius: 2em;
+    background-color: #388e3c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-profile-cancel-btn{
+    border-radius: 2em;
+    background-color: #f44336;
+    font-size: 14px;
+    font-weight: 500;
+}

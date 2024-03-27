@@ -1,6 +1,11 @@
 import { dayKeyValue, monthKeyValue } from "./Variables";
 import axios from "axios";
 
+const clearCookies = () => {
+    document.cookie = 'username=;'
+    document.cookie = 'password=' 
+}
+
 
 const getUserNamePicture = async () => {
     await axios.get(`https://localhost:7115/User/GetUser?username=${username}`)
@@ -62,4 +67,10 @@ function getTodayMonth(){
     return monthKeyValue[new Date().getMonth()];
 }
 
-export {getCookiesValues, getActiveUser, getTodayDay, getTodayMonth, stepOverDay, getUserInformation};
+export {clearCookies, 
+        getCookiesValues, 
+        getActiveUser, 
+        getTodayDay, 
+        getTodayMonth, 
+        stepOverDay, 
+        getUserInformation};
