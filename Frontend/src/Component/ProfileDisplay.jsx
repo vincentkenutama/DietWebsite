@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-export default function ProfileDisplay({username})
+export default function ProfileDisplay({username, imSize, navigation})
 {
     const [userDisplay, setUserDisplay] = useState('')
     const [userImage, setUserImage] = useState('') 
@@ -17,7 +17,7 @@ export default function ProfileDisplay({username})
     })
 
     const navigateToUserPage = () => {
-        navigate('/dashboard')    
+        navigate('/user/update')    
     }
 
     const getUserInformation = async () => {
@@ -36,10 +36,11 @@ export default function ProfileDisplay({username})
     return(
         <div    className="profile-container"
                 onMouseOver={(e) => e.target.style.cursor = 'pointer' }
+                onClick={navigation}
                 >
 
-            <DisplayName name={userDisplay} toUser={navigateToUserPage}/>
-            <ProfilePicture image={userImage} size="small" toUser={navigateToUserPage}/>
+            <DisplayName name={userDisplay} toUser={navigation}/>
+            <ProfilePicture image={userImage} size={imSize} toUser={navigation}/>
         </div>
     )
 }

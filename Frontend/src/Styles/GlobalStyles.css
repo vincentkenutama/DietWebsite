@@ -1,0 +1,25 @@
+.navigation-bar{
+    background-color: white;
+    /* height: 2em; */
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.navigation-bar-title{
+    /* display: none; */
+    font-size: 20px;
+    font-weight: 500;
+    
+    /* margin: 2em 1em; */
+}
+
+.navbar-profile-picture{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+}
