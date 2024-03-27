@@ -78,11 +78,12 @@ export default function SignUpPage()
 
         await axios.post('https://localhost:7115/User/SignUp', form)
         .then((res) => {
-            console.log(res)
-            if(res.data.status != 'ok') {setNotify(res.data.status); navigate('/redirect/signup')}
-            else setNotify('ok')
+            // console.log(res)
+            if(res.data.status == 'ok') {setNotify('ok'); navigate('/redirect/signup')}
+            else setNotify(res.data.status)
         })
         .catch((e) => {
+            setNotify('Connection Error')
             console.log(e)
         })
     }

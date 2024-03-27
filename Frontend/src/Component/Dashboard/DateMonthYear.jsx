@@ -23,6 +23,8 @@ export default function DateMonthYear({offset = 0, navigate})
 
 
     return(
-        <div className='datepicker-header'onMouseOver={(e) => e.target.style.cursor = 'pointer'} onClick={navigate}>{month} {year}</div>
+        <div    className='datepicker-header'
+                onMouseOver={(e) => e.target.style.cursor = 'pointer'} 
+                onClick={navigate}>{month} {year}</div>
     );
 }

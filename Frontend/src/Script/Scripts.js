@@ -2,7 +2,18 @@ import { dayKeyValue, monthKeyValue } from "./Variables";
 import axios from "axios";
 
 
+const getUserNamePicture = async () => {
+    await axios.get(`https://localhost:7115/User/GetUser?username=${username}`)
+    .then((response) => {
+        const data = response.data;
+        
+        setFullName(data.Nama)
+        setImage(data.Picture)
+    }
+    ).catch(() => {
 
+    })    
+}
 
 async function getUserInformation()
 {
