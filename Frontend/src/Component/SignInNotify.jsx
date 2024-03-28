@@ -7,7 +7,9 @@ export default function SignInNotify({status = 'ok', msg = ''}) {
         password: 'notify-password',
         username: 'notify-username',
         both: 'notify-both',
-        empty: 'notify-empty'
+        empty: 'notify-empty',
+        notify: 'notify',
+        invalid: 'notify-red'
     }
 
     const message = {
@@ -19,6 +21,10 @@ export default function SignInNotify({status = 'ok', msg = ''}) {
 
 
     return (
-        <p className={(status in state) ? state[status] : state.both}>{(status in message) ? message[status] : status} {msg}</p>
+        <>
+            {console.log(status, msg)}
+            <p className={(status.toLowerCase() in state) ? state[status] : state.both}>{(status.toLowerCase() in message) ? message[status] : (status.toLocaleLowerCase() == 'notify' || 'invalid') ?  '' : status} {msg}</p>
+        
+        </>
     );
 }

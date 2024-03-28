@@ -20,9 +20,27 @@ const getUserNamePicture = async () => {
     })    
 }
 
+
+function formatDate(inputDate) {
+    const [datePart] = inputDate.split(' '); 
+    const dateParts = datePart.split('/');
+
+    console.log(datePart, dateParts)
+    
+    const year = dateParts[2];
+    const month = String(dateParts[0]).padStart(2, '1');
+    const day = String(dateParts[1]).padStart(2, '0');
+    
+    const formattedDate = `${year}-${month}-${day}`;
+    
+    return formattedDate;
+}
+
 async function getUserInformation()
 {
-    const response = await axios.get(`https://localhost:7115/User/GetUser?username=vincentkenutama`)
+    const username = getCookiesValues('username')
+    console.log(username)
+    const response = await axios.get(`https://localhost:7115/User/GetUser?username=${username}`)
     // console.log(response);
     return response;
     
@@ -67,10 +85,42 @@ function getTodayMonth(){
     return monthKeyValue[new Date().getMonth()];
 }
 
+function mouseOverPointer(e){
+    e.target.style.cursor = 'pointer'
+}
+
+function getTodayString()
+{
+    const today = new Date()
+    const stringify = {
+        year : today.getFullYear(),
+        month : (today.getMonth() + 1 < 10) ? `0${today.getMonth() + 1}` : `${today.getMonth() + 1}`,
+        date : (today.getDate() < 10) ? `0${today.getDate()}` : `${today.getDate()}`  
+    }
+
+
+    return `${stringify.year}-${stringify.month}-${stringify.date}`
+
+}
+
+
+function getAge(birthDate)
+{
+    const Today = new Date()
+    const BirthDate = new Date(`${birthDate}`)
+
+    return new Date(new Date(Today - BirthDate)).getFullYear() - 1970;
+}
+
 export {clearCookies, 
         getCookiesValues, 
         getActiveUser, 
         getTodayDay, 
         getTodayMonth, 
         stepOverDay, 
-        getUserInformation};
+        getUserInformation,
+        mouseOverPointer,
+        getAge, 
+        getTodayString,
+        formatDate
+    };

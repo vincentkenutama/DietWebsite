@@ -3,6 +3,7 @@ import ProfilePicture from '../ProfilePicture';
 import ProfileDisplay from '../ProfileDisplay';
 import { useEffect, useState } from 'react';
 import {getUserInformation} from '@scripts/Scripts';
+import { getActiveUser } from '../../Script/Scripts';
 
 export default function NavigationBar({pageTitle = 'page', navLink})
 {
@@ -16,7 +17,6 @@ export default function NavigationBar({pageTitle = 'page', navLink})
 
     const getPicture = async () => {
         const response = await getUserInformation();
-        // console.log(response) 
         setUsername(response.data.Username)
         setImg(response.data.Picture)
     }
@@ -25,8 +25,10 @@ export default function NavigationBar({pageTitle = 'page', navLink})
         <div className="navigation-bar">
             <span className="navigation-bar-title">{pageTitle}</span>
             <div className='navbar-profile-picture'>
-                <ProfileDisplay username={username} imSize={'30px'}/>
+                <ProfileDisplay username={getActiveUser()} imSize={'small'}/>
+                 
                 {/* <ProfilePicture  image={img} size='30px'/> */}
+
             </div>
             
         </div>

@@ -14,6 +14,9 @@ namespace DietWebsiteServer.Models
         public string? Gender {  get; set; }
         public string? Picture { get; set; }
         string? IJson.status { get => status; set => status = value; }
+        public string? BirthDate { get; set; }
+        public string? Email { get; set; }
+        public string? Number { get; set; }
 
         public Users()
         {

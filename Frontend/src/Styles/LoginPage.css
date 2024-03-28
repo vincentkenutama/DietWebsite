@@ -119,6 +119,33 @@ a:hover{
     color: white;
 }
 
+.notify{
+    visibility: visible;
+    transition: 800ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+    background-color: green;
+    color: white;
+}
+
+.notify-red{
+    visibility: visible;
+    transition: 800ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+    background-color: red;
+    color: white;
+}
+
+
 /* ok: 'hidden',
 password: 'notify-password',
 username: 'notify-username',

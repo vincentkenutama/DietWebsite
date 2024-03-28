@@ -23,6 +23,9 @@ export default function SignInForm({status})
 
         setUsername((userIndex == -1) ? '' : cookie[userIndex + 1]);
         setPassword((passIndex == -1) ? '' : cookie[passIndex + 1]);
+
+        setUsername('')
+        setPassword('')
         
         // console.log(cookie, cookie.findIndex((element) => element == 'username'))
         // if(document.cookie) console.log(document.cookie.split('=').)
