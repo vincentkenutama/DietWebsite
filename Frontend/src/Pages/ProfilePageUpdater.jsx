@@ -14,14 +14,19 @@ import { useState } from "react";
 export default function ProfilePageUpdater()
 {
 
-    const [notification, setNotification] = useState('')
+    const [notification, setNotification] = useState(['', ''])
+
+    const notify = (status, msg) => {
+        setNotification([status, msg])
+    }
+
 
     return(
         <div className="profile-page-container">
-            <SignInNotify status= 'both'/>
+            <SignInNotify status= {notification[0]} msg={notification[1]}/>
             <NavigationBar pageTitle="Update Profile"/>
             <UserPictureName/>
-            <UserProfileUpdateForm/>
+            <UserProfileUpdateForm notify={notify}/>
         </div>
         
     );

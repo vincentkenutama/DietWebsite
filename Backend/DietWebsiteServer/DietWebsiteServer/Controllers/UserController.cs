@@ -40,13 +40,13 @@ namespace DietWebsiteServer.Controllers
         //}
 
         [HttpPost]
-        public async Task<string> Update(string oldUsername, string newUsername)
+        public async Task<string> Update(string oldUser, string newUserData)
         {
-            Users oldUser = JsonSerializer.Deserialize<Users>(oldUsername);
-            //Users updatedUser = new Users(username: newUsername);
-            await Console.Out.WriteLineAsync($"oldusername {oldUser.Username}");
-            //return await UserHandler.UpdateUser(oldUser, updatedUser);
-            return "";
+            Users oldUserData = JsonSerializer.Deserialize<Users>(oldUser);
+            Users updatedUserData = JsonSerializer.Deserialize<Users>(newUserData);
+
+            return await UserHandler.UpdateUser(oldUserData, updatedUserData);
+
         }
     }
 }

@@ -15,11 +15,10 @@ export default function UserPictureName({username})
 
     useEffect(() => {
         getUserProfile()
-    }, [])
+    },)
 
     const getUserProfile = async () => {
         const response = await getUserInformation();
-        console.log(response)
         setFullName(response.data.Nama)
         setImage(response.data.Picture)
         setUsername(response.data.Username)
