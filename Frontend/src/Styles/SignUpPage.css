@@ -75,3 +75,25 @@ label{
     margin-bottom: 10px;
     
 }
+
+.show-password.true{
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    transition: 200ms;
+    visibility: true;
+}
+
+.show-password.true:hover{
+    padding: 0.5em;
+    transition: 200ms;
+    border-radius: 0.5em;
+    font-weight: 600;
+    background-color: rgb(252, 210, 154);
+}
+
+.show-password.false{
+    display: none;
+    visibility: hidden;
+}
+

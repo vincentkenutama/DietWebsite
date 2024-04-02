@@ -3,6 +3,7 @@ import '../Styles/SignUpPage.css'
 import SignInNotify from '../Component/SignInNotify';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { mouseOverPointer } from '../Script/Scripts';
 
 export default function SignUpPage()
 {
@@ -14,6 +15,8 @@ export default function SignUpPage()
     const [age, setAge] = useState(0)
     const [gender, setGender] = useState('')
     const [notify, setNotify] = useState('ok')
+
+    const [showPassword, setShowPassword] = useState(false)
 
     const navigate = useNavigate();
 
@@ -30,6 +33,10 @@ export default function SignUpPage()
         setNotMatch('matching')
         setNotify('ok')
 
+    }
+
+    const onChange = (e, target) => {
+        target(e)
     }
 
     const setAgeForm = (e) => {
@@ -88,6 +95,16 @@ export default function SignUpPage()
         })
     }
 
+    const displayPassword = {
+        true : 'text',
+        false : 'password'
+    }
+
+    const textForShowPass = {
+        true : 'Hide',
+        false : 'Show'
+    }
+
 
     return(  
         <div className="sign-up-container">
@@ -101,10 +118,23 @@ export default function SignUpPage()
 
                 {/* Password and Confirmation */}
                 <label htmlFor="password">Password</label>
-                <input className='sign-up-input' type="password" name="password" id="" onChange={setPasswordI} value={password}/>
+                <input  className='sign-up-input' 
+                        type={displayPassword[showPassword]} 
+                        name="password" id="" 
+                        onChange={setPasswordI} 
+                        value={password}/>
 
                 <label htmlFor="confirmPassword">Confirmation Password</label>
-                <input className='sign-up-input' type="password" name="confirmPassword" onChange={setConfirmationPassword} value={confirmPassword}/>
+                <input  className='sign-up-input' 
+                        type={displayPassword[showPassword]} 
+                        name="confirmPassword" 
+                        onChange={setConfirmationPassword} 
+                        value={confirmPassword}/>
+
+                <span   className='show-password true' 
+                        onMouseOver={(e) => mouseOverPointer(e)}
+                        onClick={() => onChange(!showPassword, setShowPassword)}
+                        >{textForShowPass[showPassword]}</span>
 
                 <span className={`pass-not-match ${notMatch}`}>Password doesn't match</span>
 

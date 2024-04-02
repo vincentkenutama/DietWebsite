@@ -77,13 +77,16 @@ export default function UserProfileUpdateForm({notify})
         const formData = new FormData();
         formData.append('oldUser', searchQuery);
         formData.append('newUserData', query);
-
+        
         console.log(searchQuery)
         console.log(query)
 
         const response = await axios.post('https://localhost:7115/User/Update', formData)
         notify(response.data.status, response.data.message)
+        
         console.log(response)
+        
+        if(response.data.message == 'Updated') scrollOnUpdate()
 
     }
 
@@ -96,6 +99,14 @@ export default function UserProfileUpdateForm({notify})
         else notify('ok')
 
         return true
+    }
+
+    const scrollOnUpdate = async (time = 500) => {
+        await setTimeout(() => {
+            window.scrollBy(0, -100)
+            console.log('scroll up')
+            if(window.screenY < 0) return  
+        }, time)  
     }
 
     // HANDLE ON CHANGE VALUE

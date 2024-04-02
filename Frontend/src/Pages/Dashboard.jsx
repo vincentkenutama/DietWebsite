@@ -8,10 +8,18 @@ import DashboardSidebar from "../Component/Dashboard/DashboardSidebar";
 import DashboardContent from "../Component/Dashboard/DashboardContent";
 // import { google } from "googleapis";
 import UploadFile from "./UploadFile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Dashboard()
 {
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if(!getActiveUser())  navigate('login')
+    },[])
+
+
     return(
         <div className="dashboard-container">
             {/* <UploadFile/> */}

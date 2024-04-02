@@ -39,7 +39,7 @@ function formatDate(inputDate) {
 async function getUserInformation()
 {
     const username = getCookiesValues('username')
-    console.log(username)
+    // console.log(username)
     const response = await axios.get(`https://localhost:7115/User/GetUser?username=${username}`)
     // console.log(response);
     return response;
@@ -58,9 +58,10 @@ function getCookiesValues(key)
     const cookie = document.cookie
     const pairs = cookie.split(/[=;\s]+/)
     const keyIndex = pairs.findIndex((pairs) => pairs == key)
-
+    
     if(keyIndex == -1) return;
-
+    
+    // console.log(cookie)
     return pairs[keyIndex + 1]
 
 }
@@ -71,7 +72,8 @@ function stepOverDay(numDay){
 
 function getActiveUser()
 {
-    return getCookiesValues('username')
+    const res = getCookiesValues('username') 
+    return (res == 'password') ? null : res;
 }
 
 
